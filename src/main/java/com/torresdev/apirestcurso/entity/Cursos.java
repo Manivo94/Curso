@@ -29,13 +29,23 @@ public class Cursos {
 	// Construir los constructores
 	public Cursos() {   }
 	
-	public Cursos(String nombre, String descripcion, String caracteristica, Boolean estaActivo) {
+	public Cursos(Long id, String nombre, String descripcion, String caracteristica, Boolean estaActivo) {
+		this.id = id;
 		this.nombre = nombre;
 		this.descripcion = descripcion;
 		this.caracteristica = caracteristica;
 		this.estaActivo = estaActivo;
 	}
 
+	
+	
+	public long getId() {
+		return id;
+	}
+
+	public void setId(long id) {
+		this.id = id;
+	}
 
 	public String getNombre() {
 		return nombre;
