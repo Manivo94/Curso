@@ -55,9 +55,7 @@ public class CursosController {
 		}else {
 			return new ResponseEntity<>(cursos, HttpStatus.OK);
 		}
-		
-		
-			
+
 	}
 
 	// Mostrar por Id
